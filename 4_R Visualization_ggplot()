@@ -1,0 +1,7 @@
+
+>setwd(“/Users/jiarongj/Downloads/R_packages/csv/fpp2”)
+> dir()
+[1] …
+[25] "maxtemp.csv"     "melsyd.csv"      "mens400.csv"     "oil.csv"
+> dat = read.csv("melsyd.csv")
+> ggplot(dat, aes(x=dat$X, y=dat$Economy.Class)) + geom_line()
