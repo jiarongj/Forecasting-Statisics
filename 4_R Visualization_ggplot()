@@ -4,4 +4,4 @@
 [1] …
 [25] "maxtemp.csv"     "melsyd.csv"      "mens400.csv"     "oil.csv"
 > dat = read.csv("melsyd.csv")
-> ggplot(dat, aes(x=dat$X, y=dat$Economy.Class)) + geom_line()
+> ggplot(dat, aes(x=dat$X, y=dat$Economy.Class)) + geom_line() + ggtitle("Economy.Class passengers: Melbourne-Sydney") + xlab("Year") + ylab("Thousands")
