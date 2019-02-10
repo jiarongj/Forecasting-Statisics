@@ -1,0 +1,25 @@
+/***
+	One Sample t-test
+***/
+  
+> set.seed(100)
+> x<-rnorm(50,mean = 10, sd = 0.5)
+> t.test(x,mu=10) 
+
+
+/***
+data:  x
+t = 0.70372, df = 49, p-value = 0.4849
+alternative hypothesis: true mean is not equal to 10
+95 percent confidence interval:
+  9.924374 10.157135
+sample estimates:
+mean of x 
+ 10.04075 
+ 
+Explanation: null-hypothesis H0 as mean1 = mean2 = 10
+if p-value <=0.05: means the mean1 not in 95% confidence interval of the mean2 range, thus reject the null-hypothesis
+like google says "If the P-value is less, reject the null hypothesis. If the P-value is more, keep the null hypothesis. 
+0.003 < 0.05, so we have enough evidence to reject the null hypothesis and accept the claim.
+Here p-value = 0.48 >0.05, we cannot reject the null-hypothesis, thus have to agree that mean1 = mean2 = 10
+***/
